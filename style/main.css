@@ -1,0 +1,725 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+main {
+    padding-top:60px;
+}
+
+
+/*slider principal*/
+.prsentation-slider{
+    /*border: solid 2px green;*/
+    display: flex;
+    justify-content: center;  
+}
+
+.first-container-slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /*border: 2px yellow solid;*/
+}
+/* Si quiero fijar el tamaño de la imagen. EL problema es que al tener que ajustar a una altura, se argandan para ocupar todo el espacio y "parecen" recortadas.*/
+.first-slider-section img {
+    height: 300px;
+}
+ 
+.first-slider{
+    display: flex;
+    width: 500%; /*Porcentaje segun cantidad de fotos*/
+    height: auto;
+    margin-left: -100%;
+}
+ 
+.first-slider-section{
+    width: 100%;
+}
+ 
+.first-slider-img{
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+ }
+
+.first_slider_btn{
+    position: absolute;
+    z-index: 80;
+    top: 50%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.right{
+    right: 3%; 
+}
+ 
+.left{
+    left: 3%;
+}
+
+.fa-angle-right, .fa-angle-left {
+    font-size: 50%;
+    padding: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(202, 198, 198);
+}
+
+/*Titulos del Slider*/
+.inicio {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 300px;
+    /*border: 2px solid orange;*/
+}
+
+.presentacion { 
+    height: 100%;
+    padding-top: 60px;
+       
+    /* overflow: hidden;*/
+    /*border: 2px solid yellow;*/
+}
+
+.titulo-inicio  {  
+    color:white;
+    text-align: center;
+    
+    width: 220px;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*border: solid 2px red;*/
+    animation-name: slide-ToLeft;
+    animation-duration: 1.5s;    
+}
+
+.texto-inicio  {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*border: solid 2px blue;*/
+    width: 180px;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+    font-size: xx-small;
+    animation-name: slide-ToRight;
+    animation-duration: 1.5s;
+    text-align: center;
+    line-height: 12px;
+}
+
+.contacto-inicio {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*border: solid 2px green;*/
+    margin: auto;
+    padding: 0.2rem;
+    width: 70px;
+    line-height: 10px;
+    font-size: xx-small;
+    animation-name: slide-ToRight;
+    animation-duration: 2.5s;
+    text-align: center;
+}
+
+
+
+@keyframes slide-ToLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes slide-ToRight {
+    0%{
+        opacity: 0;
+        animation-delay: 1s;
+        transform: translateX(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+
+/*SECTION NOSOTROS*/
+
+.nosotros {
+    line-height: 40px;
+    
+}
+
+.presentacion-texto {
+    /*border: solid 2px rgb(224, 187, 150); */
+    text-align: center;
+    align-self: center;
+    padding: 1.5rem;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(227, 221, 221,0.2);
+    font-size:  larger;
+    
+}
+
+.presentacion-palabras {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;  
+    background-color: rgba(227, 221, 221,0.4);  
+    row-gap: .5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100% ;
+}
+
+.presentacion-palabras p {
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    text-align: center;    
+}
+
+.presentacion-palabras i {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(224, 187, 150);
+    /*color: rgb(16, 16, 16,0.3);*/
+}
+
+
+/*SEGUNDO SLIDER*/
+.second-slider {
+    /*border: 2px blue solid;*/
+    padding-top: 0.5rem;
+    margin:0;
+    
+}
+
+.second-slider h1 {
+    color:rgba(22, 22, 22, 0.8);
+    padding: 1rem;
+    text-align: center;
+    /*border: solid 2px green;*/
+    margin: 0;
+}
+
+.second-slider hr {
+    width: 80%;
+    height: 2px;
+    color: black;
+    margin: auto;
+}
+
+.container__slider {
+    max-width:1000px;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 30px 10px;*/
+
+
+
+    /*border: solid 2px green;*/
+}
+
+input {
+   
+    position: relative;
+    left: 12%;
+    bottom:-330px;
+    z-index: 10;
+    margin: 0.4rem;
+    accent-color: gray;
+    
+
+    
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 370px;
+    transform-style: preserve-3d;
+    
+
+    /*border: solid 2px red;*/
+}
+
+.cards {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    
+
+    /*border: solid 2px blue;*/
+}
+
+/*Evita que se ponga el fondo azul*/
+label {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin:0;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* limito el tamaño de las imagenes, VER COMO QUEDA MEJOR.
+.card img {
+    height: 300px;
+    width:300px;
+}*/
+.cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*Detalle de lo que se va a mostar. */
+/*Siempre parte del item selccionado + ~ selctor de los hermanos + indicacion de que quiero hacer*/
+
+/*Cuadro principal n°3*/
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5{
+    transform: translateX(0) scale(1);
+    z-index: 2;
+}
+
+/*Cuadrado deracha n2*/
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-5,
+#item-3:checked ~ .cards #selector-2,
+#item-4:checked ~ .cards #selector-3,
+#item-5:checked ~ .cards #selector-4{
+    transform: translateX(-35%) scale(0.9);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/*Cuadrado izquierda n°4*/
+#item-3:checked ~ .cards #selector-4,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-1{
+    transform: translateX(35%) scale(0.9);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/*Cuadrado deracha n°1*/
+#item-2:checked ~ .cards #selector-5,
+#item-1:checked ~ .cards #selector-4,
+#item-3:checked ~ .cards #selector-1,
+#item-4:checked ~ .cards #selector-2,
+#item-5:checked ~ .cards #selector-3{
+    transform: translateX(-60%) scale(0.8);
+    z-index: 0;
+    opacity: 0.4;
+}
+
+/*Cuadrado izquierda n°5*/
+#item-2:checked ~ .cards #selector-4,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-5,
+#item-4:checked ~ .cards #selector-1,
+#item-5:checked ~ .cards #selector-2{
+    transform: translateX(60%) scale(0.8);
+    z-index: 0;
+    opacity: 0.4;
+}
+
+
+
+
+
+ 
+/*Boton flotante whatsapp*/
+ #boton-whatsapp-flotante {
+    
+    position: fixed;
+    
+    bottom: 150px;
+    
+    right: 10px;
+    border-radius: 50%;
+
+    /*border: solid 2px red;*/
+    height: 30px;
+    width:30px;
+    line-height: 30px;
+    font-size: 20px;
+   
+    background-color: #25D366;
+   
+    color: white;
+    text-align: center;
+    
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+
+}
+#boton-whatsapp-flotante:hover {
+    
+    color:  #25D366;
+    background-color: white;
+    
+    
+    
+}
+
+.cookie {
+    position: absolute;
+    top: 300px;
+    left:20px;
+    /*border: solid 2px yellow;*/
+    color: black;
+	
+}
+
+.cookie i {
+    color: black;
+}
+
+
+ @media screen and (min-width: 550px){
+
+    .first-slider-section img {
+        height: 500px;
+        
+    }
+    
+    .fa-angle-right, .fa-angle-left {
+        font-size: 100%;
+        padding: 0.3rem;
+        
+    }
+    /*
+    .presentacion {
+        border: red 2px solid;
+    }*/
+    .inicio {
+        height: 500px; 
+    
+    }
+
+    .presentacion {
+        padding-top: 130px;
+    }
+
+    .titulo-inicio {
+        width: 300px;
+        font-size: x-large ;
+        padding: 0.9rem;
+    }
+
+    .texto-inicio {
+       
+        font-size: small;
+        width: 220px;
+        line-height: 20px;
+        padding: 0.4rem;
+    }
+
+    .contacto-inicio {
+        font-size: small;
+        width: 110px;
+        padding: 0.4rem;
+        
+    
+    }
+
+    .nosotros {
+        row-gap:2rem ;
+    }
+    .presentacion-palabras {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+        height: 350px;
+        /*border: solid red 2px;*/
+       
+       
+        
+    }
+    
+    
+
+    .slider_section img {
+        max-height: 550px;
+        
+    }
+    
+    .slider_btn {
+        font-size: 20px;
+    }
+    #boton-whatsapp-flotante {
+    
+ 
+        bottom: 40px;
+   
+    }
+
+    /*SEGUNDO SLIDER*/
+
+    .second-slider hr {
+        width: 70%;
+        
+    }
+        .container {
+            max-width: 250px;        
+        }
+        .cards {
+            
+            width: 250px;  
+    
+        }
+        input {
+            
+            left: 20%;
+            bottom:-335px;
+        }
+    
+        /*Cuadrado deracha n2*/
+        #item-2:checked ~ .cards #selector-1,
+        #item-1:checked ~ .cards #selector-5,
+        #item-3:checked ~ .cards #selector-2,
+        #item-4:checked ~ .cards #selector-3,
+        #item-5:checked ~ .cards #selector-4{
+            transform: translateX(-30%) scale(0.9);
+            z-index: 1;
+            opacity: 0.8;
+        }
+    
+    /*Cuadrado izquierda n°4*/
+    #item-3:checked ~ .cards #selector-4,
+    #item-1:checked ~ .cards #selector-2,
+    #item-2:checked ~ .cards #selector-3,
+    #item-4:checked ~ .cards #selector-5,
+    #item-5:checked ~ .cards #selector-1{
+        transform: translateX(30%) scale(0.9);
+        z-index: 1;
+        opacity: 0.8;
+    }
+    
+    /*Cuadrado deracha n°1*/
+    #item-2:checked ~ .cards #selector-5,
+    #item-1:checked ~ .cards #selector-4,
+    #item-3:checked ~ .cards #selector-1,
+    #item-4:checked ~ .cards #selector-2,
+    #item-5:checked ~ .cards #selector-3{
+        transform: translateX(-55%) scale(0.8);
+        z-index: 0;
+        opacity: 0.4;
+    }
+    
+        /*Cuadrado izquierda n°5*/
+        #item-2:checked ~ .cards #selector-4,
+        #item-1:checked ~ .cards #selector-3,
+        #item-3:checked ~ .cards #selector-5,
+        #item-4:checked ~ .cards #selector-1,
+        #item-5:checked ~ .cards #selector-2{
+            transform: translateX(55%) scale(0.8);
+            z-index: 0;
+            opacity: 0.4;
+    }
+    .cookie {
+        
+        top: 480px;
+        
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .first-slider-section img {
+        height: 600px;
+        
+    }
+   
+    .presentacion {
+        padding-top: 160px;
+    }
+    .titulo-inicio {
+        width: 650px;
+        font-size: 350%;
+        padding: 1.2rem;
+    }
+
+    .texto-inicio {
+        
+        font-size: medium;
+        width: 300px;
+        padding: 0.6rem;
+        
+    }
+
+    .contacto-inicio {
+        font-size: medium;
+        width: 150px;
+        padding: 0.6rem;
+        
+    
+    }
+    .presentacion-palabras {
+        height: 300px;
+    }
+    .presentacion-palabras p{
+        font-size: 120%;
+        
+    }
+
+    .slider_section img {
+        height: 800px;
+        
+    }
+    .slider_btn {
+        font-size: 25px;
+    }
+
+    #boton-whatsapp-flotante {
+    
+
+        bottom: 30px;
+
+    }
+
+    /*SEGUNDO SLIDER*/
+        .second-slider hr {
+            width: 70%;
+        }
+
+        .second-slider h1{
+            font-size: 220%;
+        }
+
+        .container__slider {
+            height: 550px;
+        }
+        .container {
+            max-width: 400px;   
+            max-height: 550px;     
+        }
+        .cards {
+            
+            width: 400px;  
+            height: 480px;
+    
+        }
+        input {
+            
+            left: 30%;
+            bottom:-512px;
+        }
+            /*Cuadrado deracha n2*/
+            #item-2:checked ~ .cards #selector-1,
+            #item-1:checked ~ .cards #selector-5,
+            #item-3:checked ~ .cards #selector-2,
+            #item-4:checked ~ .cards #selector-3,
+            #item-5:checked ~ .cards #selector-4{
+                transform: translateX(-30%) scale(0.9);
+                z-index: 1;
+                opacity: 0.8;
+            }
+        
+        /*Cuadrado izquierda n°4*/
+        #item-3:checked ~ .cards #selector-4,
+        #item-1:checked ~ .cards #selector-2,
+        #item-2:checked ~ .cards #selector-3,
+        #item-4:checked ~ .cards #selector-5,
+        #item-5:checked ~ .cards #selector-1{
+            transform: translateX(30%) scale(0.9);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        
+        /*Cuadrado deracha n°1*/
+        #item-2:checked ~ .cards #selector-5,
+        #item-1:checked ~ .cards #selector-4,
+        #item-3:checked ~ .cards #selector-1,
+        #item-4:checked ~ .cards #selector-2,
+        #item-5:checked ~ .cards #selector-3{
+            transform: translateX(-55%) scale(0.8);
+            z-index: 0;
+            opacity: 0.4;
+        }
+        
+            /*Cuadrado izquierda n°5*/
+            #item-2:checked ~ .cards #selector-4,
+            #item-1:checked ~ .cards #selector-3,
+            #item-3:checked ~ .cards #selector-5,
+            #item-4:checked ~ .cards #selector-1,
+            #item-5:checked ~ .cards #selector-2{
+                transform: translateX(55%) scale(0.8);
+                z-index: 0;
+                opacity: 0.4;
+        }
+
+        .cookie {
+            position: absolute;
+            top: 500px;
+            left:20px;
+            /*border: solid 2px yellow;*/
+            color: black;
+            
+        }
+        
+        .cookie i {
+            color: black;
+        }
+
+}
+
+
+@media screen and (min-width: 1400px) {
+    .inicio {
+        max-height: 900px;
+        max-width: 1400px;
+        margin: 0 auto;
+       
+    
+    }
+} 
+
+
+
+
+
+
+

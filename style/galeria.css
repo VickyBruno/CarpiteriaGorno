@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+      
+
+}
+   
+main {
+    padding-top: 60px;
+    
+   
+}
+  
+h2 {
+    width: 100%;
+    font-size: 200%;
+    /*border: solid 2px yellow;*/
+    text-align: center;
+    margin: 0rem auto 0;
+    padding: 2rem 0;
+    color: rgba(0, 0, 0, 0.4);
+    color: rgb(147, 146, 146);
+    background-color: rgb(251, 250, 250);
+   
+    
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+main  {
+    background-color: rgba(210, 206, 206, 0.2);
+    
+}
+.container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*border: solid 2px red;*/
+    width: 320px;
+    margin: 0 auto;
+    padding: 1rem 0 ;
+   
+   
+}
+.container-each-car {
+    /*border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    
+    width:300px;
+    height: 180px;
+    
+    
+
+   
+    
+}
+.container-each-car:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.foto, .icon-boton {
+    width: 50%;
+    /*border:solid 2px red;*/
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.icon-boton {
+    background-color: rgb(250, 214, 179);
+   background-color: rgb(226, 225, 225);
+   background-color: white;
+   
+    
+}
+
+.foto {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+   
+    
+}
+
+.foto img{
+   
+    height: 180px;
+    width: 150px;
+    /*object-fit: cover;*/
+    
+   
+}
+
+.icon-boton {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+/*
+.icon-boton img {
+    height: 60px;
+    width: 60px;
+    
+    /*border: 2px gray solid;
+    
+    
+}*/
+.icon-boton i {
+    font-size: 150%;
+    color: rgb(35, 35, 35,0.8);
+    margin-bottom: 0.5rem;
+
+}
+
+.icon-boton a {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  
+
+.icon-boton a {
+    border-radius: 40px;
+    /*border: solid 2px rgb(224, 187, 150);*/
+    padding: 0.4rem;
+    color: white;
+    background-color: rgb(224, 187, 150);
+    text-decoration: none;
+    font-size: 75%;
+    font-weight: lighter;
+}
+
+.texto-personalizados {
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width:450px) {
+    h2 {
+        font-size: 300%;
+        padding: 2.5rem 0;
+    }
+    .container-card {
+        width: 410px;
+        padding: 1.5rem 0 ;
+    }
+    .container-each-car {
+        width:400px;
+        height: 250px;
+        
+        
+    }
+    .foto img{
+        height: 250px;
+        width: 200px;
+       
+       
+    }
+    
+    .icon-boton a {
+        font-size: 100%;
+        padding: 0.4rem;
+    }
+    
+    .icon-boton i {
+        font-size: 220%;
+        margin-bottom: 0.8rem;
+        
+        
+       
+    }
+    
+   
+}
+
+
+@media screen and (min-width:915px) {
+    h2 {
+        font-size: 400%;
+        padding: 3rem 0;
+    }
+    .container-card {
+        width: 910px;
+        padding: 2rem 0 ;
+    }
+    .container-each-car {
+        width: 450px;
+        height: 300px;
+        
+        
+    }
+    .foto img{
+        height: 300px;
+        width: 225px;
+       
+       
+    }
+
+    .container-each-car:nth-child(even){
+        flex-direction: row;
+    }
+    .container-each-car:nth-child(3),
+    .container-each-car:nth-child(4){
+        flex-direction: row-reverse;
+    }
+
+    .icon-boton img {
+        height: 180px;
+        width: 180px;
+        /*border: 2px gray solid;*/
+        
+        
+    }
+    
+    .icon-boton a {
+        font-size: 110%;
+        padding: 0.6rem;
+       
+    }
+    .icon-boton i {
+        font-size: 230%;
+        margin-bottom: 1rem;
+        
+        
+       
+    }
+    
+    
+}

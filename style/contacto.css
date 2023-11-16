@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+      
+
+}
+   
+main {
+    padding-top: 60px; 
+}
+
+.title-section-contacto {
+    font-size: 140%;
+    line-height: 40px;
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: rgb(227, 221, 221,0.2); 
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.subtitle-section-contacto {
+    font-size: 90% ;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(227, 221, 221,0.4); 
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.iconos-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.2rem;    
+    /*border: solid 2px green;*/
+    /*border: solid 1px rgb(224, 187, 150);*/   
+}
+
+.phone, .email, .location {
+    /*border: solid 2px violet;*/
+    padding: 0.2rem;
+    margin: 0.2rem auto;
+    /*border: solid 1px rgb(224, 187, 150);*/
+    width: 95%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.phone p, .email p, .location p{
+    font-size: small;
+    text-align: center;
+}
+
+.fa-envelope, .fa-location-dot, .fa-phone {
+    /*border: #fd5949 solid 2px;*/
+    font-size: 200%;
+    width: 50px;
+    align-self: center;
+    text-align: center;
+    color:  rgb(224, 187, 150);
+    padding: 0.2rem;
+    margin: 0.4rem;
+    /*border: solid 2px red;*/
+}
+
+.maps iframe { 
+    height: 250px;
+    width: 100%;
+    border: solid 2px green;
+}
+
+@media screen and (min-width: 550px) {
+    
+    .title-section-contacto {
+        font-size: 220%;
+        padding: 4rem 2rem; 
+    }
+    
+    .subtitle-section-contacto {
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 120%;
+        font-weight: bolder; 
+        background-color: rgb(227, 221, 221,0.4); 
+    }
+
+   
+    .phone, .email, .location {
+        /*border: solid 2px violet;*/
+        padding: 0.4rem;
+        margin: 0.2rem auto;
+    }
+
+    .phone p, .email p, .location p{
+        font-size: medium;
+    }
+
+    .fa-envelope, .fa-location-dot, .fa-phone {
+        /*border: #fd5949 solid 2px;*/
+        font-size: 300%;
+        width: 50px;
+        align-self: center;
+        text-align: center;
+        color:  rgb(224, 187, 150);
+        padding: 0.2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .title-section-contacto {
+        font-size: 300%;
+        padding: 7rem 3rem; 
+        line-height: 50px;
+    }
+    
+    .subtitle-section-contacto {
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 150%;
+    }
+    
+    .iconos-contacto {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+    }
+
+    .phone, .email, .location {
+        /*border: solid 2px violet;*/
+        padding: 0.4rem;
+        margin: auto;
+        height: 130px;
+        width: 33%;
+    }
+
+    .phone p, .email p, .location p{
+        font-size: large; 
+    }
+
+    .fa-envelope, .fa-location-dot, .fa-phone {
+        /*border: #fd5949 solid 2px;*/
+        font-size: 250%;
+        width: 50px;
+        align-self: center;
+        text-align: center;
+        color:  rgb(224, 187, 150);
+        padding: 0.2rem;
+        margin-bottom: 0.8rem;
+    }
+}
+

@@ -25,7 +25,7 @@ main {
 }
 /* Si quiero fijar el tamaño de la imagen. EL problema es que al tener que ajustar a una altura, se argandan para ocupar todo el espacio y "parecen" recortadas.*/
 .first-slider-section img {
-    height: 300px;
+    height: 400px;
 }
  
 .first-slider{
@@ -72,7 +72,7 @@ main {
 /*Titulos del Slider*/
 .inicio {
     position: absolute;
-    top: 60px;
+    top: 100px;
     width: 100%;
     height: 300px;
     /*border: 2px solid orange;*/
@@ -80,7 +80,7 @@ main {
 
 .presentacion { 
     height: 100%;
-    padding-top: 60px;
+    padding-top: 70px;
        
     /* overflow: hidden;*/
     /*border: 2px solid yellow;*/
@@ -89,8 +89,8 @@ main {
 .titulo-inicio  {  
     color:white;
     text-align: center;
-    
-    width: 220px;
+    font-size: 180%;
+    width: 340px;
     margin: auto;
     margin-bottom: 2rem;
     padding: 0.5rem;
@@ -104,15 +104,15 @@ main {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     /*border: solid 2px blue;*/
-    width: 180px;
+    width: 250px;
     margin: auto;
     margin-bottom: 1rem;
-    padding: 0.2rem;
-    font-size: xx-small;
+    padding: 0.4rem;
+    font-size: 90%;
     animation-name: slide-ToRight;
     animation-duration: 1.5s;
     text-align: center;
-    line-height: 12px;
+    line-height: 18px;
 }
 
 .contacto-inicio {
@@ -120,10 +120,10 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     /*border: solid 2px green;*/
     margin: auto;
-    padding: 0.2rem;
-    width: 70px;
+    padding: 0.4rem;
+    width: 130px;
     line-height: 10px;
-    font-size: xx-small;
+    font-size: 90%;
     animation-name: slide-ToRight;
     animation-duration: 2.5s;
     text-align: center;
@@ -187,6 +187,7 @@ main {
 
 .presentacion-palabras p {
     font-weight: bolder;
+    font-size: 100%;
     color: rgba(0, 0, 0, 0.7);
     padding: 0.5rem;
     display: flex;
@@ -404,7 +405,7 @@ label {
 
 .cookie {
     position: absolute;
-    top: 300px;
+    top: 380px;
     left:20px;
     /*border: solid 2px yellow;*/
     color: black;
@@ -442,23 +443,23 @@ label {
     }
 
     .titulo-inicio {
-        width: 300px;
-        font-size: x-large ;
+        width: 420px;
+        font-size: 220% ;
         padding: 0.9rem;
     }
 
     .texto-inicio {
        
-        font-size: small;
-        width: 220px;
+        font-size: 100%;
+        width: 330px;
         line-height: 20px;
-        padding: 0.4rem;
+        padding: 0.5rem;
     }
 
     .contacto-inicio {
-        font-size: small;
-        width: 110px;
-        padding: 0.4rem;
+        font-size: 100%;
+        width: 150px;
+        padding: 0.5rem;
         
     
     }
@@ -584,15 +585,15 @@ label {
 
     .texto-inicio {
         
-        font-size: medium;
-        width: 300px;
+        font-size: 120%;
+        width: 400px;
         padding: 0.6rem;
         
     }
 
     .contacto-inicio {
-        font-size: medium;
-        width: 150px;
+        font-size: 120%;
+        width: 200px;
         padding: 0.6rem;
         
     

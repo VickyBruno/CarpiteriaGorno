@@ -30,7 +30,7 @@ main {
  
 .first-slider{
     display: flex;
-    width: 500%; /*Porcentaje segun cantidad de fotos*/
+    width: 600%; /*Porcentaje segun cantidad de fotos*/
     height: auto;
     margin-left: -100%;
 }
